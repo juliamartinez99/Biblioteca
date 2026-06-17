@@ -115,7 +115,11 @@ public class Menu extends JPanel implements ActionListener{
 		scroll.getViewport().setOpaque(false);
 		add(scroll);
 		
-		fondo = new JLabel(new ImageIcon("src/img/fondoBiblio.jpg"));
+		fondo = new JLabel(
+			    new ImageIcon(
+			        getClass().getResource("/img/fondoBiblio.jpg")
+			    )
+			);
 		fondo.setBounds(0, 0, 1200, 800);
 		add(fondo);
 
@@ -333,10 +337,10 @@ public class Menu extends JPanel implements ActionListener{
 	        	
 	        	if(!rs.next()) {
 	        		
-	        		System.out.println("No hay elementos en la tabla");
+//	        		System.out.println("No hay elementos en la tabla");
 	        	}else {
 	        		
-	        		System.out.println("ID\tTITULO\tAUTOR\tAÑO\tDISPONIBLE\tFECHA ALTA");
+//	        		System.out.println("ID\tTITULO\tAUTOR\tAÑO\tDISPONIBLE\tFECHA ALTA");
 	        		
 		            do {
 		            	
@@ -346,7 +350,7 @@ public class Menu extends JPanel implements ActionListener{
 		                String year = rs.getString("anio_publicacion");
 		                String disponible = rs.getString("disponible");
 		                String alta = rs.getString("falta");
-		                System.out.println(id + "\t" + titulo + "\t" + autor + "\t" + year + "\t" + disponible + "\t" + alta);
+//		                System.out.println(id + "\t" + titulo + "\t" + autor + "\t" + year + "\t" + disponible + "\t" + alta);
 		                libros.add(new Libro(String.valueOf(id),titulo,autor,year,disponible,alta));
 		           
 		            }while (rs.next());

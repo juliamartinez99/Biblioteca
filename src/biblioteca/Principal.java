@@ -16,39 +16,8 @@ public class Principal {
 	
 	
 	public static void main(String[] args) {
-		
+
 		Ventana v = new Ventana();
-		
-//		traducir();
-//		int opcion = 0;
-//		
-//		do {
-//			
-//			switch(opcion = menu()) {
-//			case 1:
-//				mostrarLibros();
-//				break;
-//				
-//			case 2:
-//				pedirDatosLibro();
-//				break;
-//				
-//			case 3:
-//				
-//				prestarLibro();
-//				break;
-//				
-//			case 4:
-//				
-//				eliminarLibro();
-//				break;
-//				
-//			default:
-//				System.out.println("Fin de programa");
-//			
-//			}
-//			
-//		}while(opcion != 5);
 
 		
 	}

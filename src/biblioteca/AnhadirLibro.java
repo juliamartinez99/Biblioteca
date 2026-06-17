@@ -93,7 +93,11 @@ public class AnhadirLibro extends JPanel implements ActionListener{
 		add(jbGuardar);
 		jbGuardar.addActionListener(this);
 		
-		fondo = new JLabel(new ImageIcon("src/img/fondoBiblio.jpg"));
+		fondo = new JLabel(
+			    new ImageIcon(
+			        getClass().getResource("/img/fondoBiblio.jpg")
+			    )
+			);
 		fondo.setBounds(0, 0, 1200, 800);
 		add(fondo);
 		
